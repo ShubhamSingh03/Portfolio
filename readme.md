@@ -14,15 +14,15 @@
 ***
 ## Description
 
-This is [Personal Portfolio]() webpage built using Semantic HTML and **Tailwind** from scratch.
+This is [Personal Portfolio](https://shubhambhoj.in/) webpage built using Semantic HTML and **Tailwind** from scratch.
 
 ***
 
-* [LIVE Link]()
+* [LIVE Link](https://shubhambhoj.in/)
 
-* [Youtube Video Demo]()
+* [Youtube Video Demo](https://youtu.be/mdmvHM9fnYQ)
 
-* [Findcoder Profile]()
+* [Findcoder Profile](https://www.findcoder.io/u/shubham_singh)
 
 ***
 ### Built With 
@@ -54,7 +54,7 @@ This is [Personal Portfolio]() webpage built using Semantic HTML and **Tailwind*
 * [Mailto](mailto:shubhambhoj3@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/shubham-singh-b122b7171/)
 * [Github](https://github.com/ShubhamSingh03)
-* [Findcoder]()
+* [Findcoder](https://www.findcoder.io/u/shubham_singh)
 ***
 ***
 [go to top](#personal-portfolio)
