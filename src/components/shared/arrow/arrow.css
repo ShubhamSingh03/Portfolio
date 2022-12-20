@@ -1,0 +1,14 @@
+/* common Arrow component */
+.arrow-icon {
+  width: 1.313rem;
+  height: 1.313rem;
+  background: var(--yellow);
+  border-radius: 2.563rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.625rem;
+}
+.arrow-icon svg {
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,84 @@
+/* navbar  */
+.top-navigation-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  user-select: none;
+}
+/* navbar logo image */
+.top-navigation-bar .app-logo {
+  width: 8.938rem;
+  flex-shrink: 0;
+}
+.top-navigation-bar .app-logo img {
+  width: 100%;
+  display: block;
+}
+/* navbar hamburger menu icon */
+.top-navigation-bar .mobile-menu {
+  display: none;
+}
+/* navigation items here */
+.top-navigation-bar .navigation {
+  display: flex;
+  align-items: center;
+}
+.top-navigation-bar .navigation .navigation-item {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1;
+  margin-left: 1.25rem;
+  padding: 0.313rem;
+  box-shadow: inset 0 0 0 0 var(--white);
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.top-navigation-bar .navigation .navigation-item:hover {
+  box-shadow: inset 12.5rem 0 0 0 var(--white);
+  color: var(--black);
+}
+/* navbar call to action btn */
+.top-navigation-bar .call-to-action {
+  margin-left: 1.563rem;
+}
+
+/* media queries  */
+@media screen and (max-width: 768px) {
+  .top-navigation-bar {
+    margin-top: 0.938rem;
+  }
+  .top-navigation-bar .app-logo {
+    width: 6.25rem;
+  }
+  .top-navigation-bar .mobile-menu {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .top-navigation-bar .navigation {
+    display: none;
+  }
+  .top-navigation-bar .navigation.active {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.188rem;
+  }
+  .top-navigation-bar .navigation .navigation-item {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+}
