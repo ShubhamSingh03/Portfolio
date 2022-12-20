@@ -26,7 +26,7 @@ const Skills = () => {
   return (
     <>
       <Section background="light" id="skills">
-        <div className="skills-content-wrapper">
+        <div className="skills-content-wrapper" title="Skills">
           <h2>
             <AnimatedLetter
               letterClass={letterClass}
