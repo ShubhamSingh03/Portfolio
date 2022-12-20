@@ -1,3 +1,77 @@
-.App {
-  text-align: center;
+::selection {
+  color: #141414;
+  background: #c2c2b5;
+}
+:root {
+  --white: #fff;
+  --bg-color-gray: #313131;
+  --gray-lighter: #989898;
+  --black: #000;
+  --black-light: #131313;
+  --black-lighter: #232323;
+  --yellow: #ffdb44;
+  --react-logo-color: #61dafb;
+  --base-font-family: "Merriweather", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--base-font-family);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* common props/styles across webpage */
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 1.2;
+}
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 1.2;
+}
+h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+/* vertical(y-axis) scroll bar */
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #f0f0f042;
+}
+body::-webkit-scrollbar-thumb {
+  background: #9696fa;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.875rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
 }

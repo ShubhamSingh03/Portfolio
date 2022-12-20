@@ -12,6 +12,14 @@ module.exports = {
     extend: {
       colors: {
         clifford: "#da373d",
+        white: "#fff",
+        bgColorGray: "#313131",
+        grayLighter: "#989898",
+        black: "#000",
+        blackLight: "#131313",
+        blackLighter: "#232323",
+        yellow: "#ffdb44",
+        reactLogoColor: "#61dafb",
       },
     },
   },
