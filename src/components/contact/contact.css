@@ -1,0 +1,43 @@
+/* contact section component */
+#contact {
+  padding: 3.75rem 3% 1.875rem 3%;
+  position: relative;
+  /* background: linear-gradient(145deg, #434343 45%, #383737 20%); */
+  background: #383737;
+}
+/* contact section title  */
+#contact h2 {
+  color: var(--white);
+  text-align: center;
+}
+/* contact section content */
+.contact-content-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 774px) {
+  #contact {
+    padding: 2rem 0 0.938rem 0;
+  }
+  #contact h2 span {
+    display: inline-block;
+  }
+  .contact-content-wrapper {
+    padding: 0 0.424rem;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #contact h2 {
+    font-size: 1.6rem;
+  }
+}
