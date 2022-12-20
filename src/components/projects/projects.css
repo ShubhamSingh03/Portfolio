@@ -1,0 +1,33 @@
+/* projects section component here */
+.projects-section {
+  padding: 3.75rem 0 1.875rem 0;
+  position: relative;
+  background: #434343;
+}
+/* projects section title here */
+.projects-section h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.portfolio-content-wrapper {
+  padding: 0 10px;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .projects-section {
+    padding: 2rem 0 0.938rem 0;
+  }
+  .portfolio-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .projects-section h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,69 @@
+/* skills content wrapper */
+.skills-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.skills-content-wrapper h2 {
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+/* right-col section  */
+.skills-content-wrapper .right-col {
+  width: 100%;
+}
+/* right-col section icons section */
+.skills-content-wrapper .right-col .techsection {
+  width: 100%;
+  text-align: center;
+  height: 50vh;
+}
+.skills-content-wrapper .right-col .techsection > div {
+  width: 14%;
+  height: 16vh;
+  max-height: 8.75rem;
+  z-index: 1;
+  border-radius: 1.25rem;
+  margin: 3%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease 0s;
+  border: 2px solid var(--yellow);
+  box-shadow: var(--yellow) 5px 5px 5px inset;
+}
+.skills-content-wrapper .right-col .techsection > div:hover {
+  overflow: hidden;
+  transform: scale(1.08);
+  border: 1px solid var(--yellow);
+  box-shadow: var(--yellow) 5px 5px 5px;
+}
+.skills-content-wrapper .right-col .techsection > div > svg {
+  font-size: 8vh;
+}
+.skills-content-wrapper .right-col .techsection > div > h5 {
+  position: relative;
+  top: 0.5rem;
+  background-color: transparent;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .skills-content-wrapper .right-col .techsection {
+    height: fit-content;
+  }
+  .skills-content-wrapper .right-col .techsection > div {
+    width: 27%;
+    height: 14vh;
+  }
+  .skills-content-wrapper .right-col .techsection > div > svg {
+    font-size: 5vh;
+  }
+  .skills-content-wrapper .right-col .techsection > div > h5 {
+    font-size: 0.8rem;
+  }
+}

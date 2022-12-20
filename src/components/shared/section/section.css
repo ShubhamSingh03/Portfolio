@@ -1,0 +1,49 @@
+/* common Section component here */
+.section {
+  padding: 3.75rem 0 1.875rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.section.dark {
+  background: #434343;
+}
+.section.light {
+  /* background: linear-gradient(145deg, #434343 45%, #383737 20%); */
+  background: #383737;
+}
+/* common Section component content */
+.section .content {
+  width: 75rem;
+  padding: 0 1.25rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* common Section component title */
+.section .content .section-title {
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  max-width: 31.25rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0 0.938rem 0;
+  }
+  .section.light {
+    background: linear-gradient(121deg, #434343 45%, #383737 20%);
+  }
+  .section .content {
+    padding: 0 0.625rem;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .section .content .section-title h2 {
+    font-size: 1.8rem;
+  }
+}
