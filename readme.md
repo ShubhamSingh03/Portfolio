@@ -5,25 +5,25 @@
 
 ## Project Status
 
-Portfolio `v2.0` is in development
+Portfolio `v2.0` is LIVE now!
 
 ## Description
 
-This is [Personal Portfolio](https://shubhambhoj.in/) webpage built using Semantic React.js, Tailwindcss & Sass from scratch.
+This is [Personal Portfolio](https://shubhambhoj.in/) webpage built using Semantic React.js from scratch.
 
 - [LIVE Link](https://shubhambhoj.in/)
 
-- [Youtube Video Demo](https://youtu.be/mdmvHM9fnYQ)
+- [Youtube Video Demo v1.0](https://youtu.be/mdmvHM9fnYQ)
 
 - [Findcoder Profile](https://www.findcoder.io/u/shubham_singh)
 
 ## Tech Stack Used
 
-![Tech Stack Used](https://skillicons.dev/icons?i=react,javascript,tailwind,sass,nodejs,html,git)
+![Tech Stack Used](https://skillicons.dev/icons?i=react,javascript,tailwind,nodejs,html,css,git)
 
 ## Screencaptures
 
-![screenshot]()
+![screenshot](./src/assets/mobilecapture.png)
 
 ## Connect with Me
 
