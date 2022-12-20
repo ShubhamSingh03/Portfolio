@@ -37,7 +37,7 @@ const Hero = () => {
           {/* left hero here */}
           <div className="left-col">
             {/* main image */}
-            <img src={mainimage} alt="main Image" />
+            <img src={mainimage} alt="main" />
             <div className="highlights horizontal">
               <div className="icon">
                 <FaCrown color="var(--yellow)" />
@@ -159,7 +159,7 @@ const Hero = () => {
       <div className="max-w-4xl flex items-center h-auto flex-wrap mx-auto mt-20 mb-32 lg:my-0 for-mobile-screen">
         <div
           id="profile"
-          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 lg:mx-0"
         >
           <div className="p-4 md:p-12 text-center lg:text-left">
             {/* logo image */}
@@ -179,7 +179,6 @@ const Hero = () => {
                   strings: [
                     "Frontend Web Developer",
                     "UI/UX Developer",
-                    "UI/UX Designer",
                     "MERN Stack Developer",
                   ],
                   autoStart: true,
@@ -187,7 +186,7 @@ const Hero = () => {
                 }}
               />
             </div>
-            <p className="pt-4 text-gray-700 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+            <p className="pt-2 text-gray-700 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
               <svg
                 className="h-4 fill-current text-green-700 pr-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +200,7 @@ const Hero = () => {
               I am Computer science graduate and passionate frontend web
               developer and I design and code beautifully simple things
             </p>
-            <div className="pt-12 pb-8">
+            <div className="pt-4 pb-8">
               <button
                 className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
                 onClick={() => scrollToSection("contact")}
@@ -210,7 +209,7 @@ const Hero = () => {
               </button>
             </div>
             {/* social links here */}
-            <div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+            <div className="mt-2 pb-12 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
               <a
                 className="link"
                 href="https://www.linkedin.com/in/shubham-singh-b122b7171/"
