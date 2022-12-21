@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import projectsData from "./projectsData";
 import "./projects.css";
-import AnimatedLetter from "../animatedLetters/AnimatedLetter";
 import Filter from "./filter/Filter";
 import ShowCase from "./showcase/ShowCase";
+import { SecondSection } from "../shared/section/Section";
 
 // Projects section component here
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [transition, setTransition] = useState(false);
-  const [letterClass, setLetterClass] = useState("text-animate");
-  const projectsTitleString = "Check my Projects";
-  const projectsTitleArray = [...projectsTitleString];
 
   const filterProjects = (tag) => {
     setTransition("zoomout");
@@ -38,22 +35,11 @@ const Projects = () => {
   // on load by default
   useEffect(() => {
     filterProjects("featured");
-    setLetterClass("text-animate-hover");
   }, []);
 
   return (
-    <section
-      id="portfolio"
-      title="Check my Projects"
-      className="projects-section"
-    >
-      <h2>
-        <AnimatedLetter
-          letterClass={letterClass}
-          strArray={projectsTitleArray}
-          idx={22}
-        />
-      </h2>
+    <section id="portfolio" className="projects-section">
+      <SecondSection />
       <div className="portfolio-content-wrapper">
         {/* Filter section component */}
         <Filter filterProjects={(tag) => filterProjects(tag)} />

@@ -13,13 +13,13 @@ const Contact = () => {
   const anyQString = "Any Questions?";
   const contactTitleAnyArray = [...anyQString];
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({});
     setLetterClass("text-animate-hover");
   }, []);
   return (
     <section id="contact">
       <SecondSection />
-      <h2 className="opacity-70" data-aos="zoom-in">
+      <h2 className="opacity-70" data-aos="zoom-out">
         <AnimatedLetter
           letterClass={letterClass}
           strArray={contactTitleAnyArray}

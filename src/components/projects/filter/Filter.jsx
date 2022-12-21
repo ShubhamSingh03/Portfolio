@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./filter.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // filter data here
 const filtersData = [
@@ -32,6 +34,7 @@ const filtersData = [
 // filter items component here
 const Filter = ({ filterProjects }) => {
   const [active, setActive] = useState("");
+  const isInitialMount = useRef(true);
 
   const clickHandler = (id) => {
     setActive(id);
@@ -39,12 +42,20 @@ const Filter = ({ filterProjects }) => {
   };
 
   useEffect(() => {
-    setActive("featured");
+    if (isInitialMount.current) {
+      setActive("featured");
+    } else {
+      Aos.refresh();
+    }
   }, []);
 
   return (
     <div className="filter-component">
-      <ul className="filter-menu-items">
+      <ul
+        className="filter-menu-items"
+        data-aos="flip-down"
+        data-aos-duration="700"
+      >
         {filtersData.map((item) => {
           return (
             <li

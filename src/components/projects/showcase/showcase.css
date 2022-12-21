@@ -50,18 +50,6 @@
   display: flex;
   align-items: center;
 }
-.projects-showcase .showcase-item.zoomIn {
-  transform: scale(0);
-  -webkit-animation: zoomIn 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
-    forwards;
-  animation: zoomIn 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-.projects-showcase .showcase-item.zoomOut {
-  transform: scale(1);
-  -webkit-animation: zoomOut 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
-    forwards;
-  animation: zoomOut 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
 .projects-showcase .showcase-item:hover {
   z-index: 1;
   transform: scale(1.2);
@@ -72,40 +60,6 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(-20px);
-}
-
-/* Projects showcase section transistions here */
-@-webkit-keyframes zoomIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes zoomOut {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes zoomOut {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
 }
 
 /* media queries */
@@ -124,21 +78,20 @@
 
 @media screen and (max-width: 396px) {
   .projects-showcase .showcase-item {
-    width: 9.063rem;
-    height: 9.063rem;
-  }
-  .projects-showcase .showcase-item .meta-content {
-    left: 0rem;
+    margin: 0.2rem;
   }
   .projects-showcase .showcase-item .meta-content h3 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 356px) {
+@media screen and (max-width: 368px) {
   .projects-showcase .showcase-item {
-    width: 7.813rem;
-    height: 7.813rem;
+    width: 9.013rem;
+    height: 9.013rem;
+  }
+  .projects-showcase .showcase-item .meta-content {
+    left: 0.5rem;
   }
   .projects-showcase .showcase-item .meta-content h3 {
     font-size: 0.7rem;
@@ -150,5 +103,18 @@
     .showcaseTextHover
     a {
     font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .projects-showcase .showcase-item {
+    width: 7.813rem;
+    height: 7.813rem;
+  }
+  .projects-showcase .showcase-item .meta-content {
+    left: 0rem;
+  }
+  .projects-showcase .showcase-item .meta-content h3 {
+    font-size: 0.6rem;
   }
 }
