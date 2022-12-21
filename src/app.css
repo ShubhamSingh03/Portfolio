@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 ::selection {
   color: #141414;
   background: #c2c2b5;
@@ -10,8 +11,11 @@
   --black-light: #131313;
   --black-lighter: #232323;
   --yellow: #ffdb44;
+  --yellow-dark: #ffbd03;
   --react-logo-color: #61dafb;
+  --title-color: rgba(255, 255, 255, 0.185);
   --base-font-family: "Merriweather", sans-serif;
+  --title-font-family: "Source Sans Pro", sans-serif;
 }
 * {
   margin: 0;
@@ -20,6 +24,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 /* common props/styles across webpage */
@@ -54,10 +59,10 @@ body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-  background-color: #f0f0f042;
+  background-color: var(--gray-lighter);
 }
 body::-webkit-scrollbar-thumb {
-  background: #9696fa;
+  background: var(--black-lighter);
 }
 
 /* media queries */

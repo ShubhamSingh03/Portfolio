@@ -19,6 +19,7 @@ module.exports = {
         blackLight: "#131313",
         blackLighter: "#232323",
         yellow: "#ffdb44",
+        yellowDark: "#ffbd03",
         reactLogoColor: "#61dafb",
       },
     },
