@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import "./contact.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { SecondSection } from "../shared/section/Section";
 import AnimatedLetter from "../animatedLetters/AnimatedLetter";
 import ContactInfo from "./contact-info/ContactInfo";
 import Form from "./form/Form";
@@ -7,32 +10,25 @@ import Form from "./form/Form";
 // contact component here
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const anyQString = "Any Question?";
-  const feelFString = "Feel Free to Contact";
+  const anyQString = "Any Questions?";
   const contactTitleAnyArray = [...anyQString];
-  const contactTitleFeelArray = [...feelFString];
   useEffect(() => {
+    Aos.init({ duration: 2000 });
     setLetterClass("text-animate-hover");
   }, []);
   return (
-    <section id="contact" title="Any Question? Feel Free to Contact">
-      <h2>
+    <section id="contact">
+      <SecondSection />
+      <h2 className="opacity-70" data-aos="zoom-in">
         <AnimatedLetter
           letterClass={letterClass}
           strArray={contactTitleAnyArray}
           idx={15}
         />{" "}
-        <span className="opacity-70">
-          <AnimatedLetter
-            letterClass={letterClass}
-            strArray={contactTitleFeelArray}
-            idx={25}
-          />
-        </span>
       </h2>
-      <div className="contact-content-wrapper">
+      <div className="contact-content-wrapper lg:px-[4.5%]">
         <section className="bg-transparent w-full">
-          <div className="px-0 sm:px-4 py-12 mx-auto">
+          <div className="px-0 sm:px-4 py-12 lg:py-8 mx-auto">
             <div className="lg:flex lg:-mx-6">
               {/* contact me left component */}
               <ContactInfo />

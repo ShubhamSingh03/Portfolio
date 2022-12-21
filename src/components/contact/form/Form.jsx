@@ -62,7 +62,7 @@ const Form = () => {
           >
             <div className="w-full lg:flex 1 lg:gap-x-3">
               {/* fullName input field */}
-              <div className="flex-1">
+              <div className="flex-1" title="Full Name">
                 <label className="block mb-2 text-sm">Full Name</label>
                 <input
                   type="text"
@@ -80,7 +80,7 @@ const Form = () => {
                 )}
               </div>
               {/* email input field */}
-              <div className="flex-1 mt-6 lg:mt-0">
+              <div className="flex-1 mt-6 lg:mt-0" title="Email address">
                 <label className="block mb-2 text-sm">Email address</label>
                 <input
                   type="email"
@@ -103,7 +103,7 @@ const Form = () => {
               </div>
             </div>
             {/* subject input field */}
-            <div className="flex-1 mt-6">
+            <div className="flex-1 mt-6" title="Subject">
               <label className="block mb-2 text-sm">Subject</label>
               <input
                 type="text"
@@ -125,7 +125,7 @@ const Form = () => {
               )}
             </div>
             {/* Message input field */}
-            <div className="w-full mt-6">
+            <div className="w-full mt-6" title="Message here">
               <label className="block mb-2 text-sm">Message</label>
               <textarea
                 name="message"
@@ -152,7 +152,8 @@ const Form = () => {
 
             <button
               type="submit"
-              className="w-full px-6 py-3 mt-6 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow rounded-md hover:opacity-80 focus:outline-none focus:ring focus:ring-yellow focus:ring-opacity-50"
+              title="Get in touch"
+              className="w-full px-6 py-3 mt-6 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow rounded-md hover:bg-yellowDark focus:outline-none focus:ring focus:ring-yellow focus:ring-opacity-50"
             >
               get in touch
             </button>
