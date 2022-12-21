@@ -20,5 +20,15 @@ const Section = ({ children, id, className, title, background }) => {
     </div>
   );
 };
+// common second Section component
+export const SecondSection = () => {
+  return (
+    <div className="second-section">
+      <div className="second-content">
+        <h2 className="backG-text"></h2>
+      </div>
+    </div>
+  );
+};
 
 export default Section;

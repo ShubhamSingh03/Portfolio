@@ -29,10 +29,29 @@
   max-width: 31.25rem;
 }
 
+/* second section */
+.second-section {
+  padding: 0 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.second-section .second-content {
+  width: 75rem;
+  padding: 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
   .section {
     padding: 2rem 0 0.938rem 0;
+  }
+  .second-section .second-content {
+    width: 100%;
   }
   .section.light {
     background: linear-gradient(121deg, #434343 45%, #383737 20%);
