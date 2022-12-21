@@ -1,15 +1,18 @@
-import { FallingLines } from "react-loader-spinner";
+import { Bars } from "react-loader-spinner";
 import "./loader.css";
 
 // loader component
 const Loader = () => {
   return (
     <div className="loader-class">
-      <FallingLines
-        color="var(--gray-lighter)"
-        width="100"
+      <Bars
+        height="80"
+        width="80"
+        color="var(--white)"
+        ariaLabel="bars-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
         visible={true}
-        ariaLabel="falling-lines-loading"
       />
     </div>
   );
