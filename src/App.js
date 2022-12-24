@@ -6,8 +6,7 @@ import Intro from "./components/Intro/Intro";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
-import { BsFillArrowUpSquareFill } from "react-icons/bs";
-import { scrollToSection } from "./utilities/helper";
+import BacktoTop from "./components/backToTop/BacktoTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,12 +29,7 @@ function App() {
           <Projects />
           <Contact />
           <Footer />
-          <span className="fixed right-1 bottom-2 md:right-4 cursor-pointer text-[#989898] hover:text-opacity-50 focus:text-opacity-50">
-            <BsFillArrowUpSquareFill
-              size={40}
-              onClick={() => scrollToSection("home")}
-            />
-          </span>
+          <BacktoTop />
         </>
       )}
     </div>
