@@ -1,30 +1,41 @@
+import { useEffect, useState } from "react";
+import { scrollToSection } from "../../utilities/helper";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
+
+// back to top
 const BacktoTop = () => {
-  let topButton = document.getElementById("topBtn");
-  window.onscroll = () => {
-    scrollFunction();
-  };
+  const [isVisible, setIsVisible] = useState(false);
 
   const scrollFunction = () => {
-    if (document.documentElement.scrollTop > 100) {
-      topButton.classList.remove("hidden");
-      topButton.classList.add("flex");
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
+      setIsVisible(true);
     } else {
-      topButton.classList.add("hidden");
+      setIsVisible(false);
     }
   };
 
-  const topFunction = () => {
-    document.documentElement.scrollTop = 0;
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrollFunction);
+  }, []);
+
   return (
-    <span
-      className="hidden fixed right-1 bottom-2 md:right-4 cursor-pointer text-[#989898] hover:text-opacity-50 focus:text-opacity-50"
-      title="Go to Top"
-      id="topBtn"
-    >
-      <BsFillArrowUpSquareFill size={36} onClick={topFunction} />
-    </span>
+    <>
+      {isVisible && (
+        <span
+          className="fixed right-1 bottom-2 md:right-4 cursor-pointer text-[#989898] hover:text-opacity-50 focus:text-opacity-50"
+          title="Go to Top"
+          id="topBtn"
+        >
+          <BsFillArrowUpSquareFill
+            size={36}
+            onClick={() => scrollToSection("home")}
+          />
+        </span>
+      )}
+    </>
   );
 };
 
