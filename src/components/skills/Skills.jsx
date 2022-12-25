@@ -11,10 +11,10 @@ import {
   SiSass,
   SiTailwindcss,
   SiGit,
+  SiFirebase,
 } from "react-icons/si";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap } from "react-icons/bs";
 
 // skills section component
@@ -76,8 +76,8 @@ const Skills = () => {
                 <h5>Git</h5>
               </div>
               <div data-aos="fade-down">
-                <VscGithub color="var(--white)" />
-                <h5>Github</h5>
+                <SiFirebase color="var(--yellow)" />
+                <h5>Firebase</h5>
               </div>
             </div>
           </div>
