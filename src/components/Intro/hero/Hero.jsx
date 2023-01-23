@@ -3,16 +3,12 @@ import Typewriter from "typewriter-effect";
 import "./hero.css";
 import AnimatedLetter from "../../animatedLetters/AnimatedLetter";
 import { scrollToSection } from "../../../utilities/helper";
+
 // icons imported from react-icons
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaCrown,
-  FaYoutube,
-  FaReact,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
+
 // images & gifs
-import mainimage from "../../../assets/mainimage.png";
 import smmainimage from "../../../assets/smmainimage.jpg";
 import hand from "../../../assets/hand.png";
 import linkedInGif from "../../../assets/mobileLogoGifs/linkedin.gif";
@@ -35,9 +31,7 @@ const Hero = () => {
       <div className="intro-content">
         <div className="layout">
           {/* left hero here */}
-          <div className="left-col">
-            {/* main image */}
-            <img src={mainimage} alt="main" />
+          {/* <div className="left-col">
             <div className="highlights horizontal">
               <div className="icon">
                 <FaCrown color="var(--yellow)" />
@@ -51,11 +45,14 @@ const Hero = () => {
               </div>
               <div className="text">MERN Stack</div>
             </div>
-          </div>
+          </div> */}
           {/* right hero here */}
           <div className="right-col">
             {/* right hero title */}
             <h1 className="title">
+              <p className="text-sm tracking-widest text-gray-500">
+                LET&#39;S BUILD SOMETHING TOGETHER
+              </p>
               <span className="small-text">
                 <span className="text">
                   <AnimatedLetter
@@ -100,54 +97,61 @@ const Hero = () => {
                 }}
               />
             </h1>
-            <p>
-              I am Computer science graduate and passionate frontend web
-              developer and I design and develop the quality work code with
-              beautifully simple things
-            </p>
-            {/* social links here */}
-            <div className="flex w-1/2 space-x-6">
-              <a
-                href="https://github.com/ShubhamSingh03"
-                rel="noopener noreferrer"
-                target={"_blank"}
-              >
-                <FaGithub
-                  size={40}
-                  color="var(--yellow)"
-                  className="hover:scale-110"
-                  style={{
-                    transition: "all 0.5s ease 0s",
-                  }}
-                />
-              </a>
+            <span className="intro-text">
+              <p>
+                I am focused on building responsive front-end web applications
+                integrating back-end technologies. I design and develop the{" "}
+                quality work code with beautifully simple things.
+              </p>
+            </span>
+            {/* social links here */}{" "}
+            <div className="flex justify-center py-4 space-x-6">
+              {/* linkedin */}
               <a
                 href="https://www.linkedin.com/in/shubham-singh-b122b7171/"
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <FaLinkedinIn
-                  size={40}
-                  color="var(--yellow)"
-                  className="hover:scale-110"
-                  style={{
-                    transition: "all 0.5s ease 0s",
-                  }}
-                />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaLinkedinIn
+                    size={35}
+                    color="var(--yellow)"
+                    // className="hover:scale-110"
+                    // style={{
+                    //   transition: "all 0.5s ease 0s",
+                    // }}
+                  />
+                </div>
               </a>
+              {/* github */}
               <a
-                href="https://www.youtube.com/channel/UCmBcF63DSMqM9k3-O2hxFow"
+                href="https://github.com/ShubhamSingh03"
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <FaYoutube
-                  size={40}
-                  color="var(--yellow)"
-                  className="hover:scale-110"
-                  style={{
-                    transition: "all 0.5s ease 0s",
-                  }}
-                />
+                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaGithub size={35} color="var(--yellow)" />
+                </div>
+              </a>
+              {/* youtube */}
+              <a
+                href="https://www.youtube.com/@shubham_bhoj"
+                rel="noopener noreferrer"
+                target={"_blank"}
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaYoutube size={35} color="var(--yellow)" />
+                </div>
+              </a>
+              {/* twitter */}
+              <a
+                href="mailto:shubhambhoj3@gmail.com"
+                rel="noopener noreferrer"
+                target={"_blank"}
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <MdMail size={35} color="var(--yellow)" />
+                </div>
               </a>
             </div>
           </div>
@@ -159,7 +163,7 @@ const Hero = () => {
       <div className="max-w-4xl flex items-center h-auto flex-wrap mx-auto mt-20 mb-32 lg:my-0 for-mobile-screen">
         <div
           id="profile"
-          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 lg:mx-0"
+          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-95 lg:mx-0"
         >
           <div className="p-4 md:p-12 text-center lg:text-left">
             {/* logo image */}
@@ -197,8 +201,9 @@ const Hero = () => {
               Pilani, Rajasthan
             </p>
             <p className="pt-8 text-sm">
-              I am Computer science graduate and passionate frontend web
-              developer and I design and code beautifully simple things
+              I am focused on building responsive front-end web applications
+              integrating back-end technologies. I design and develop the{" "}
+              quality work code with beautifully simple things.
             </p>
             <div className="pt-4 pb-8">
               <button
@@ -251,7 +256,7 @@ const Hero = () => {
               </a>
               <a
                 className="link"
-                href="https://www.youtube.com/channel/UCmBcF63DSMqM9k3-O2hxFow"
+                href="https://www.youtube.com/@shubham_bhoj"
                 target="_blank"
                 rel="noopener noreferrer"
               >
