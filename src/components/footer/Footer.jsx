@@ -3,6 +3,8 @@ import Section from "../shared/section/Section";
 import Logo from "../../assets/logo.png";
 import SocialIcon from "./social-icon/SocialIcon";
 import { scrollToSection } from "../../utilities/helper";
+
+// icons
 import { FaYoutube, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 // footer section component
@@ -61,7 +63,7 @@ const Footer = () => {
           <SocialIcon
             color="#FF0000"
             icon={<FaYoutube />}
-            link="https://www.youtube.com/channel/UCmBcF63DSMqM9k3-O2hxFow"
+            link="https://www.youtube.com/@shubham_bhoj"
           />
           <SocialIcon
             color="#1D9BF0"
