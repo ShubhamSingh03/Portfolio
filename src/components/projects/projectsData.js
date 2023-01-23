@@ -1,5 +1,16 @@
 const projectsData = [
   {
+    id: 101,
+    name: "Freelance Project",
+    tags: ["all", "html&css", "featured"],
+    links: {
+      live: "https://stechdesigners.com",
+    },
+    media: {
+      thumbnail: require("../../assets/projects/HTML&Tail/Stech.png"),
+    },
+  },
+  {
     id: 1,
     name: "Github User Finder",
     tags: ["all", "react", "featured"],
@@ -204,7 +215,7 @@ const projectsData = [
   {
     id: 16,
     name: "Product Design Landing Page",
-    tags: ["all", "html&css", "featured"],
+    tags: ["all", "html&css"],
     links: {
       live: "https://prdesign-page.netlify.app/",
       github: "https://github.com/ShubhamSingh03/ProductDesignLandingPage",
