@@ -3,7 +3,7 @@
   width: 100%;
   padding: 3.75rem 0 1.875rem 0;
   position: relative;
-  background: #434343;
+  background: var(--blackProject);
 }
 .projects-section .backG-text::before {
   content: "projects";
