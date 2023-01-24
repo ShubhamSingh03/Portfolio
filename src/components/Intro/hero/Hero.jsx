@@ -112,7 +112,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-gray-400 ease-in duration-300">
                   <FaLinkedinIn
                     size={35}
                     color="var(--yellow)"
@@ -129,7 +129,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-gray-400 ease-in duration-300">
                   <FaGithub size={35} color="var(--yellow)" />
                 </div>
               </a>
@@ -139,7 +139,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-gray-400 ease-in duration-300">
                   <FaYoutube size={35} color="var(--yellow)" />
                 </div>
               </a>
@@ -149,7 +149,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 target={"_blank"}
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-gray-400 ease-in duration-300">
                   <MdMail size={35} color="var(--yellow)" />
                 </div>
               </a>
@@ -200,7 +200,7 @@ const Hero = () => {
               </svg>
               Pilani, Rajasthan
             </p>
-            <p className="pt-8 text-sm">
+            <p className="pt-6 text-sm">
               I am focused on building responsive front-end web applications
               integrating back-end technologies. I design and develop the{" "}
               quality work code with beautifully simple things.
