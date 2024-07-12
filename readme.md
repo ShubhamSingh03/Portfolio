@@ -11,7 +11,7 @@ Portfolio `v2.0` is LIVE now!
 
 This is [Personal Portfolio](https://shubhambhoj.in/) webpage built using Semantic React.js from scratch.
 
-- [LIVE Link](https://shubhambhoj.in/)
+- [LIVE Link](https://shubham5.netlify.app/)
 
 - [Youtube Video Demo v1.0](https://youtu.be/mdmvHM9fnYQ)
 
@@ -20,10 +20,6 @@ This is [Personal Portfolio](https://shubhambhoj.in/) webpage built using Semant
 ## Tech Stack Used
 
 ![Tech Stack Used](https://skillicons.dev/icons?i=react,javascript,tailwind,nodejs,html,css,git)
-
-## Screencaptures
-
-![screenshot](./src/assets/mobilecapture.png)
 
 ## Connect with Me
 
